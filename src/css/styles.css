@@ -3,22 +3,9 @@
   margin: 0;
   padding: 0;
 }
-/*
-### Body Copy
-
-- Font size: 15px
-
-### Font
-
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weight: 700
-
-
-- Mobile: 375px
-- Desktop: 1440px*/
 
 :root {
-  --backgroung-body: hsl(240, 78%, 98%);
+  --backgroung-body: rgb(242, 240, 251);
   --Linear-Gradient: hsl(236, 72%, 79%);
   --Light-Grayish-Blue: hsl(234, 14%, 74%);
   --Grayish-Blue: hsl(233, 13%, 49%);
@@ -32,20 +19,121 @@ body {
 }
 
 .background {
+  z-index: 0;
   position: relative;
 }
 .backgroundOne {
-  display: none;
   position: absolute;
+  right: 0px;
+  top: -22px;
   background-image: url("../../assets/image/bg-top.svg");
-  width: 500px;
-  height: 500px;
-}
-.backgroundTwo {
-  position: absolute;
-  top: 200px;
-  background-image: url("../../assets/image/bg-bottom.svg");
-  background-size: contain;
-  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
   height: 400px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  padding: 40px 20px 20px 20px;
+}
+header h1 {
+  color: var(--Grayish-Blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+.pricing {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-card {
+  z-index: 1;
+  margin-bottom: 30px;
+  padding: 30px;
+  min-width: 280px;
+  min-height: 380px;
+  max-width: 300px;
+  max-height: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 2px 14px 1px rgba(0, 0, 0, 0.08);
+}
+.pricing-card h3 {
+  padding-bottom: 10px;
+  color: var(--Grayish-Blue);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.pricing-card .pricing-USD {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 18px;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 2rem;
+  font-weight: 700;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e9;
+}
+.pricing-USD .pricing-money {
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding-left: 5px;
+  color: var(--Dark-Grayish-Blue);
+}
+.pricing-card .text {
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e7e7e9;
+  color: var(--Grayish-Blue);
+}
+.pricing-card .text-final {
+  margin-bottom: 25px;
+}
+.pricing-card button {
+  width: 220px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgb(158, 161, 243) 30%,
+    rgba(105, 111, 218, 1) 100%
+  );
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.pricing-card button:hover {
+  background: transparent;
+  border: 1px solid var(--Linear-Gradient);
+  color: var(--Linear-Gradient);
+}
+
+.recommend {
+  background: linear-gradient(
+    90deg,
+    rgb(158, 161, 243) 30%,
+    rgba(105, 111, 218, 1) 100%
+  );
+}
+#blue {
+  color: white;
+}
+#blue-button {
+  background: white;
+  color: rgba(105, 111, 218, 1);
 }

@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weight: 700
+
+
+- Mobile: 375px
+- Desktop: 1440px*/
+
+:root {
+  --backgroung-body: hsl(240, 78%, 98%);
+  --Linear-Gradient: hsl(236, 72%, 79%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+body {
+  font-size: 62.5%;
+  background: var(--backgroung-body);
+  font-family: "Montserrat";
+}
+
+.background {
+  position: relative;
+}
+.backgroundOne {
+  display: none;
+  position: absolute;
+  background-image: url("../../assets/image/bg-top.svg");
+  width: 500px;
+  height: 500px;
+}
+.backgroundTwo {
+  position: absolute;
+  top: 200px;
+  background-image: url("../../assets/image/bg-bottom.svg");
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+}

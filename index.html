@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./src/css/desktop.css" media="(min-width: 1439px)">
   <link rel="stylesheet" href="./src/css/mobile.css" media="(min-width: 767px)">
 </head>
 
@@ -25,6 +24,16 @@
     <h1>Our Pricing</h1>
   </header>
 
+  <!-- toggle button -->
+  <div class="contain">
+    <p class="p-contain">Annually</p>
+    <div class="container">
+      <div class="toggle-btn" onclick="this.classList.toggle('active')">
+        <div class="inner-circle"></div>
+      </div>
+    </div>
+    <p class="p-contain">Monthly</p>
+  </div>
 
   <main>
     <div class="pricing">
@@ -37,6 +46,7 @@
         <p class="text text-final">Send up to 3 GB</p>
         <button type="submit">Learn more</button>
       </div>
+      <!-- card blue -->
       <div class="pricing-card recommend">
         <h3 id="blue">Professional</h3>
         <span id="blue" class="pricing-USD">$ <p id="blue" class="pricing-money">24.99</p></span>
@@ -45,6 +55,7 @@
         <p id="blue" class="text text-final">Send up to 10 GB</p>
         <button id="blue-button" type="submit">Learn more</button>
       </div>
+      <!--  -->
       <div class="pricing-card">
         <h3>Master</h3>
         <span class="pricing-USD">$ <p class="pricing-money">39.99</p></span>

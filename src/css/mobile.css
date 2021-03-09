@@ -10,7 +10,7 @@
 }
 .backgroundTwo {
   position: absolute;
-  top: 220px;
+  top: 300px;
   background-image: url("../../assets/image/bg-bottom.svg");
   background-size: contain;
   background-repeat: no-repeat;

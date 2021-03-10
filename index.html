@@ -28,37 +28,47 @@
   <div class="contain">
     <p class="p-contain">Annually</p>
     <div class="container">
-      <div class="toggle-btn" onclick="this.classList.toggle('active')">
-        <div class="inner-circle"></div>
+      <div class="switch">
+        <input type="checkbox" id="switch" onclick="myFunction()">
+        <label for="switch" class="lbl"></label>
       </div>
     </div>
     <p class="p-contain">Monthly</p>
+  </div>
   </div>
 
   <main>
     <div class="pricing">
       <div class="pricing-card">
         <h3>Basic</h3>
-        <span class="pricing-USD">$ <p class="pricing-money">19.99</p>
-        </span>
+        <!-- Monthly -->
+        <span id="monthly1" class="pricing-USD" style="display:flex">$ <p class="pricing-money">19.99</p></span>
+        <!-- yearly -->
+        <span id="yearly1" class="pricing-USD" style="display:none">$ <p class="pricing-money">1.99</p></span>
         <p class="text">500 GB Storage</p>
         <p class="text">2 Users Allowed</p>
         <p class="text text-final">Send up to 3 GB</p>
         <button type="submit">Learn more</button>
       </div>
-      <!-- card blue -->
       <div class="pricing-card recommend">
-        <h3 id="blue">Professional</h3>
-        <span id="blue" class="pricing-USD">$ <p id="blue" class="pricing-money">24.99</p></span>
-        <p id="blue" class="text">1 TB Storage</p>
-        <p id="blue" class="text">5 Users Allowed</p>
-        <p id="blue" class="text text-final">Send up to 10 GB</p>
-        <button id="blue-button" type="submit">Learn more</button>
+        <h3 class="blue">Professional</h3>
+        <!-- Monthly -->
+        <span id="monthly2" class="pricing-USD blue" style="display:flex">$ <p class=" pricing-money blue">24.99</p>
+        </span>
+        <!-- yearly -->
+        <span id="yearly2" class="pricing-USD blue" style="display:none">$ <p class="pricing-money blue">2.29</p>
+        </span>
+        <p class="text blue">1 TB Storage</p>
+        <p class="text blue">5 Users Allowed</p>
+        <p class="text text-final blue">Send up to 10 GB</p>
+        <button class="blue-btn" type="submit">Learn more</button>
       </div>
-      <!--  -->
       <div class="pricing-card">
         <h3>Master</h3>
-        <span class="pricing-USD">$ <p class="pricing-money">39.99</p></span>
+        <!-- Monthly -->
+        <span id="monthly3" class="pricing-USD" style="display:flex">$ <p class="pricing-money">39.99</p></span>
+        <!-- yearly -->
+        <span id="yearly3" class="pricing-USD" style="display:none">$ <p class="pricing-money">3.89</p></span>
         <p class="text">2 TB Storage</p>
         <p class="text">10 Users Allowed</p>
         <p class="text text-final">Send up to 20 GB</p>

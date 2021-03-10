@@ -73,7 +73,7 @@ header h1 {
   font-weight: 700;
   line-height: 1.5rem;
 }
-.pricing-card .pricing-USD {
+.pricing-USD {
   display: flex;
   justify-content: center;
   padding-bottom: 18px;
@@ -83,7 +83,7 @@ header h1 {
   align-items: center;
   border-bottom: 1px solid #e7e7e9;
 }
-.pricing-USD .pricing-money {
+.pricing-money {
   font-size: 2.8rem;
   font-weight: 700;
   padding-left: 5px;
@@ -131,14 +131,15 @@ header h1 {
     rgba(105, 111, 218, 1) 100%
   );
 }
-#blue {
+
+.pricing-card .blue {
   color: white;
 }
-#blue-button {
+.pricing-card .blue-btn {
   background: white;
   color: rgba(105, 111, 218, 1);
 }
-#blue-button:hover {
+.pricing-card .blue-btn:hover {
   border-color: white;
   background: transparent;
   color: white;
@@ -155,16 +156,9 @@ header h1 {
   color: var(--Light-Grayish-Blue);
   font-size: 0.8rem;
 }
-/* toggle btn */
-.container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: (-50%, -50%);
-  margin: 20px 0 20px 0;
-}
-.toggle-btn {
+
+.lbl {
+  display: inline-block;
   width: 75px;
   height: 36px;
   background: linear-gradient(
@@ -173,32 +167,31 @@ header h1 {
     rgba(105, 111, 218, 1) 100%
   );
   border-radius: 30px;
-  padding: 5px;
   cursor: pointer;
-  transition: all 300ms ease-in-out;
+  padding: 5px;
+  transition: 0.2s;
 }
-.toggle-btn:hover {
+.lbl:hover {
   background: var(--Light-Grayish-Blue);
 }
-.toggle-btn > .inner-circle {
+.lbl::after {
+  content: "";
+  display: block;
   position: absolute;
-  bottom: 2.7px;
+  top: 91px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background: #ffffff;
-  transition: all 300ms ease-in-out;
+  transition: 0.2s;
 }
-.toggle-btn.active {
-  background: linear-gradient(
-    90deg,
-    rgb(158, 161, 243) 20%,
-    rgba(105, 111, 218, 1) 100%
-  );
+#switch:checked + .lbl::after {
+  left: 50.3%;
 }
-.toggle-btn.active:hover {
-  background: var(--Light-Grayish-Blue);
+#switch {
+  display: none;
 }
-.toggle-btn.active > .inner-circle {
-  margin-left: 47%;
-}
+
+/* .yearly {
+  display: none;
+} */

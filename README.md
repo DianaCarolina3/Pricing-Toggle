@@ -1,2 +1,2 @@
 # Pricing-Toggle
-This is a practice whit JavaScript, HTML and CSS
+Using JavaScript, HTML and CSS for dynamics pricing 
